@@ -1,0 +1,1 @@
+DECLARE GLOBAL MissleThing TO 3.

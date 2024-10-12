@@ -1,0 +1,6 @@
+GLOBAL FUNCTION THROW { 
+    PARAMETER MESSAGE. 
+
+    PRINT "Exception: " + MESSAGE.
+    RETURN 42069 / 0.
+}
