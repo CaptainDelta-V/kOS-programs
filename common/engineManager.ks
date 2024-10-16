@@ -26,10 +26,10 @@ FUNCTION ENGINE_MANAGER {
             }
         }
         ELSE IF VESSEL_TYPE = VESSEL_TYPE_STARSHIP {
-
+            THROW("Vessel type not supported.").
         }
         ELSE { 
-            RETURN THROW("Vessel type not supported.").
+            THROW("Vessel type not supported.").
         }
     }
 
@@ -52,7 +52,7 @@ FUNCTION ENGINE_MANAGER {
                 ENGINE_MODULE:DOEVENT(TUNDRA_ENGINE_SWITCH_PREV).
             }
         }
-        ELSE IF VESSEL_TYPE = VESSEL_TYPE_FALCON_9_BOOSTER { 
+        ELSE IF VESSEL_TYPE = VESSEL_TYPE_FALCON_BOOSTER { 
             LOCAL CURR_MODE IS ENGINE_MODULE:GETFIELD("mode").       
 
             IF CURR_MODE = ENG_MODE_ALL AND TARGET_MODE = ENG_MODE_MID_INR {     

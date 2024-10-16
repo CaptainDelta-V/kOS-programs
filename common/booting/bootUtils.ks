@@ -34,8 +34,7 @@ GLOBAL FUNCTION CHECK_ALT_BOOT_FILE {
         }
         ELSE { 
             RUNPATH(ALT_BOOT_FILENAME).
-        }
-        
+        }        
     }
 }
 
